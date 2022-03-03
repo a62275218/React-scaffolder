@@ -34,6 +34,7 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    'react/button-has-type': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'no-shadow': 'off',
@@ -62,6 +63,6 @@ module.exports = {
     'prefer-promise-reject-errors': 'off',
     'no-loop-func': 'off',
     'no-return-await': 'off',
-    'no-restricted-syntax': 'off'
+    'no-restricted-syntax': 'off',
   },
 };

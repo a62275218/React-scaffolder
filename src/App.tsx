@@ -1,50 +1,22 @@
-import { useState, useMemo, useCallback } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useState, useMemo, useCallback } from 'react';
+// import Landing from '@/pages/Landing';
+import './style/index.less';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [code, setCode] = useState(2)
-
-  const memo = useCallback(() => {
-    return count + 1;
-  }, [code])
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+    <div className="demo-app">
+      <header className="demo-app-header">
+        <h1>Yara & CO.</h1>
       </header>
+      <div style={{ flex: 1 }} />
+      <footer className="demo-app-footer">
+        SmartFert 3000
+        {' '}
+        <br />
+        &copy; 2022 Yara & Co. All rights reserved.
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
