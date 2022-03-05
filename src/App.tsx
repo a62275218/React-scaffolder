@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="demo-app">
       <header className="demo-app-header">
-        <h1>Yara & CO.</h1>
+        <h1>Hello World</h1>
       </header>
       <div style={{ flex: 1 }} />
       <footer className="demo-app-footer">
